@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Suspense } from "react";
+import { Button, Container, Row, Col } from "reactstrap";
+import { BottomRight, Logo, TextRight, Title } from './styles.js'
+import { faSignIn } from "@fortawesome/pro-light-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import Header from "./Header/index.js";
+const Website = React.lazy(() => import("./index.js"));
+
+document.title = "Sei de Cor"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div>
+      <Website></Website>
     </div>
+
   );
 }
 
