@@ -4,6 +4,7 @@ import BackgroundGreyCircles from "./assets/grey.png";
 import ImageRetencao from "./assets/retencao1.png";
 import PhoneImage from "./assets/phone.png";
 import Grafico1 from "./assets/grafico1.png";
+import { faHeadphones, faPhone, faStarship } from "@fortawesome/pro-light-svg-icons";
 
 
 
@@ -101,7 +102,83 @@ export default {
               logo: "https://firebasestorage.googleapis.com/v0/b/seidecor-194519.appspot.com/o/-MJhP621nrUo3ymfHZA5%2FlogoMarca%2Ff606814e-7488-4aa2-99ea-494269b93d7f.png?alt=media&token=8dd4ffb1-2293-49a1-8a88-b4011244c9d1",
             },
           ],  
-    },
+  },
+  Planos: {
+    planos: [
+      {
+        color: "#fff",
+        fontColor: "#1d1d1d",
+        nome: "STARTER",
+        features: [
+          "Acesso ao painel administrativo",
+          "Acesso ao aplicativo Sei de Cor",
+          "Relatórios Pré-Definidos",
+          "Suporte: FAQ + Email",
+          "Conteudistas: R$150/hora",
+        ],
+        horaConteudo: 150,
+        mensal: 0,
+        usuario: 5,
+        minimo: 50,
+        btnColor: "#FEB018",
+        link: "https://api.whatsapp.com/send?phone=551321910948&text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20plano%20STARTER",
+      },
+      {
+        color: "#FEB018",
+        fontColor: "#fff",
+        nome: "PROFESSIONAL",
+        features: [
+          "Acesso ao painel administrativo",
+          "Acesso ao aplicativo Sei de Cor",
+          "Relatórios Pré-Definidos",
+          "Suporte: FAQ + Chat + Email",
+          "Conteudistas: R$120/hora\n4 horas inclusas* / mês",
+          "Apoio profissional para embarque de seus conteúdos na plataforma",
+        ],
+        horaConteudo: 120,
+        mensal: 400,
+        usuario: 7,
+        minimo: 0,
+        btnColor: "#FEB018",
+        link: "https://api.whatsapp.com/send?phone=551321910948&text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20plano%20PROFESSIONAL",
+      },
+      {
+        top: true,
+        fontColor: "#fff",
+        topColor: "#9F3268",
+        color: "#C14481",
+        nome: "ENTERPRISE",
+        icon: faStarship,
+        features: [
+          "Acesso ao painel administrativo",
+          "Acesso ao aplicativo Sei de Cor",
+          "Relatórios Pré-Definidos",
+          "Suporte: FAQ + Chat + Email",
+          "Conteudistas: R$90/hora\n8 horas inclusas* / mês",
+          "Apoio profissional para embarque de seus conteúdos na plataforma",
+        ],
+        horaConteudo: 90,
+        mensal: 600,
+        usuario: 9,
+        minimo: 0,
+        btnColor: "#2E9FAA",
+        link: "https://api.whatsapp.com/send?phone=551321910948&text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20plano%20ENTERPRISE",
+      },
+      ]
+  },
+  MaisInformacoes: {
+    title: "Quer saber mais?",
+    btnLabel: "Quero que um consultor entre em contato!",
+    icon: faPhone,
+  },
+  Footer: {
+    title: "Contato",
+    Rua: "Rua Lysimaco Ferreira da Costa, 47",
+    Endereco: "Curitiba - Paraná - Brasil",
+    EmailSup: "suporte@seidecor.com.br",
+    EmailCon: "contato@seidecor.com.br",
+    phone: "(13) 2191-0948 - whats: (13) 2191-0948",
+  },
     
 }
 /**/

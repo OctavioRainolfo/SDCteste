@@ -11,6 +11,7 @@ white-space: pre-wrap;
 `;
 export const Body = styled.div`
   display: flex;
+ 
 `;
 export const Container = styled.div`
   

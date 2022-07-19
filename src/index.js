@@ -10,6 +10,9 @@ import Row2 from "./Contents/Row2";
 import Row3 from "./Contents/Row3";
 import Row4 from "./Contents/Row4";
 import Cases from "./Contents/Cases";
+import Planos from './Contents/Planos';
+import Maisinfo from './Contents/Maisinfo';
+import Footer from './Contents/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -35,6 +38,11 @@ function Website() {
         <Row4 />
         {/*Conheça alguns de nossos clientes*/}
         <Cases/> 
+      </Container>
+      <Container>
+        <Planos />
+        <Maisinfo />
+        <Footer/>
       </Container>
     </>
   )
